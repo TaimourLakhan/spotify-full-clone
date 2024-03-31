@@ -95,11 +95,14 @@
 
             <!-- 1st layer  -->
 
+        
+           
+
 
 
             <div class="heading">
                 <h2>Recently Played</h2>
-                <p class="heading-last">show all</p>
+                <label for="all" class="heading-last">show all</label>
             </div>
             <div class="card-container">
                 <div class="card">
@@ -107,6 +110,7 @@
                     <p class="card-title">Top 50 - Global</p>
                     <p class="card-info">Your daily update of most played tracks...</p>
                 </div>
+                
             </div>
 
 
@@ -177,11 +181,50 @@
                 </div>
             </div>
 
-            <br><br><br><br><br><br><br>
+            <footer>
+                <div class="line">
+
+                </div>
+            </footer>
 
 
         </div>
-        <div class="music-player">music player</div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./Homework Assets/album_picture.jpeg" alt="Album pic" class="space_album first_img ">
+                <div class="album-para" class="space_album inside_album">
+                    <p class="head">Daylight</p>
+                    <p class="brain">David Kushner</p>
+                </div>
+                <img src="./Homework Assets/album_icon1.png" alt="" class="space_album size1">
+                <img src="./Homework Assets/album_icon2.png" alt="" class="space_album size2" >
+
+
+            </div>
+            <div class="player">
+
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="player-progress">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="total-time">3:55</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./Homework Assets/controls_icon1.png" alt="" class="img-control1">
+                <img src="./Homework Assets/controld_icon2.png" alt="" class="img-control2">
+                <img src="./Homework Assets/controls_icon3.png" alt="" class="img-control3">
+                <img src="./Homework Assets/controls_icon4.png" alt="" class="img-control4">
+                <img src="./Homework Assets/controls_icon5.png" alt="" class="img-control5" style="margin-left: 0.1rem;">
+                <input type="range" min="0" max="100" class="progress-bar" step="1" style="width: 30%;">
+            </div>
+        </div>
     </div>
 
 </body>

@@ -211,6 +211,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 0 0.8rem 0;
+    z-index: 10;
 
 }
 
@@ -327,16 +328,214 @@ body{
 
 
 
+
+/* footer section of main content  */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 0.8px solid var(--bs--secondary-color);
+    opacity: 0.2;
+}
+
+
+
+
+
 /* music player  */
 
 .music-player{
-    background-color: yellow;
+    background-color: var(--bs-primary-color);
     position: fixed;
     bottom: 0;
     height: 72px;
     width: 100%;
-    background-color: var(--bs-primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+
+/* album styling  */
+
+.album{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.brain{
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.space_album{
+    margin-left: 1rem;
+}
+.size1{
+    height: 1.5rem;
+}
+.size2{
+    height: 2rem;
+}
+
+.first_img{
+    margin-right: 1rem;
+    border-radius: 0.2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.inside_album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:1rem ;
+    padding: o.5rem;
+}
+
+
+
+/* player section starts  */
+
+
+.player{
+    width: 45%;
+}
+
+.player-control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-left: 1.7rem;
+    opacity: 0.7;
+
+}
+
+.player-control-icon:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.player-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 0.5rem 0;
+    /* width: 70%; */
+}
+
+.progress-bar{
+    width: 65%;
+    /* to unstyle the deafult property we use appeareance property for our own styling  */
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* for bydefault sliding we use webkit puedu element  */
+
+
+/* for track styling of range  */
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+
+}
+
+/* for thumb styling of range  */
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+
+/* player styling ends  */
+
+
+/* control styling start  */
+
+
+
+
+
+
+
+
+
+.controls{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-control1,.img-control2{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.img-control3,.img-control4{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.img-control5{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.1rem;
+}
+
+
+
+/* some funcationlaity in this website  */
+
+
+@media (max-width:800px){
+    .controls{
+        display: none;
+    }
+}
+
+
+@media (max-width:600px){
+    .album{
+        display: none;
+    }
+}
+
+
+
+
 
 
 
