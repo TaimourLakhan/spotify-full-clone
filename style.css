@@ -196,6 +196,7 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
     
 }
 
@@ -234,6 +235,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.sticky-nav .sticky-nav-badges:hover{
+    
+    cursor: pointer;
 }
 
 .sticky-nav .sticky-nav-badges .sticky-right{
@@ -256,12 +263,49 @@ body{
 
 
 
-/* Some responsiveness on main content using media quires  */
+/* Some responsiveness of main content on sticky nav using media quires  */
 
 @media (max-width:1000px){
     .hide{
         display: none;
     }
+}
+
+
+
+/* cards in the main content styling  */
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--bs-box-color);
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+h2{
+    margin: 1rem 0 1rem 0;
 }
 
 
