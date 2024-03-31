@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genral viewport styling ends  */
+
+
+/* Body styling starts  */
+
+a{
+    text-decoration: none;
+    color: var(--bs--secondary-color);
+}
+
+:root{
+    --bs-primary-color:#000;
+    --bs--secondary-color:#fff;
+    --bs-content-color:#121212;
+    --bs-box-color:#232323;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    background-color: var(--bs-primary-color);
+    color: var(--bs--secondary-color);
+    overflow: hidden;
+    
+}
+
+/* styling main container  */
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+
+
+/* styling the child containers  */
+
+/* sidebar  */
+
+.sidebar{
+    background-color:var(--bs-primary-color);
+    width: 340px;
+    margin-right:0.5rem ;
+    /* border-radius: 1rem;    */
+    /* 1rem is equal to 16px for root */
+}
+
+/* nav section  */
+
+.nav{
+    background-color: var(--bs-content-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    height: 100px;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+
+
+.nav-option a{
+    /* text-decoration: none; */
+    /* color: var(--bs--secondary-color); */
+    font-size: 1rem;
+    margin-left: 0.7rem;
+}
+
+.nav-option i{
+    text-decoration: none;
+    color: var(--bs--secondary-color);
+    font-size: 1.25rem;
+    /* font-size: 1rem; */
+    margin-left: 0.7rem;
+}
+
+
+/* library section in sidebar  */
+
+.library{
+    background-color: var(--bs-content-color);
+    border-radius: 1rem;
+    margin-top: 0.75rem;
+    height: 100%;
+    padding: 0.5rem 0.7rem;
+}
+
+.lib-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.lib-option .option{
+    line-height: 2.5rem;
+    padding: 0.75rem 1.25rem;
+    opacity: 0.7;
+}
+
+.lib-option .option:hover{
+    
+    opacity: 1;
+}
+
+
+.lib-option .option img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.7rem;
+}
+
+.icons{
+    display: flex;
+    
+}
+
+.icons i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+    
+}
+
+.icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* boxes in library section  */
+
+.box{
+    height: 8rem;
+    background-color: var(--bs-box-color);
+    border-radius: 0.8rem;
+    margin: 0.25rem 0 0.9rem 0.7rem;
+    padding: 0.8rem 1.1rem;
+}
+
+.boxp1{
+    font-size:0.9rem ;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+.boxp2{
+    font-size: 0.7rem;
+    opacity: 0.9;
+
+
+}
+
+.badge{
+    background-color: var(--bs--secondary-color);
+    width: fit-content;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    margin-top: 0.6rem;
+    height: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* main content  */
+
+.main-content{
+    background-color: var(--bs-content-color);
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    
+}
+
+/* sticky nav styling in main content  */
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--bs-content-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0 0.8rem 0;
+
+}
+
+.sticky-nav .sticky-nav-icons{
+    margin-left: 0.8rem;
+}
+
+.sticky-nav .sticky-nav-icons img{
+    opacity: 0.7;
+    height: 1.4rem;
+    width: 1.4rem;
+    
+    cursor: pointer;
+}
+
+.sticky-nav .sticky-nav-icons img:hover{
+    opacity: 1;
+}
+
+
+.sticky-nav .sticky-nav-badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav .sticky-nav-badges .sticky-right{
+    margin-right: 1.1rem;
+}
+
+
+/* dark badge in sticky nav  */
+.darkbadge{
+    background-color: var(--bs-primary-color);
+    width: fit-content;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    margin-top: 0.6rem;
+    height: 2rem;
+    font-weight: 700;
+    color: var(--bs--secondary-color);
+}
+
+
+
+/* Some responsiveness on main content using media quires  */
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+
+
+
+
+/* music player  */
+
+.music-player{
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background-color: var(--bs-primary-color);
+}
+
+
+
+
