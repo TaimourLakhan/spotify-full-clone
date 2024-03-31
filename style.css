@@ -304,8 +304,23 @@ body{
     opacity: 0.7;
 }
 
-h2{
+.heading{
     margin: 1rem 0 1rem 0;
+    display: flex;
+    margin-left: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading-last{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 
